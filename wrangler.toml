@@ -1,0 +1,15 @@
+name = "b2-multi-account-worker"
+main = "index.js"
+compatibility_date = "2026-10-15"
+
+# Non-secret config lives here. Sensitive values (B2_ACCOUNTS, or the
+# legacy B2_KEY_ID / B2_APPLICATION_KEY) should be set as secrets,
+# NOT in this file — see the README / deploy steps.
+[vars]
+# Optional: override the default 24h edge cache TTL (in seconds).
+# CACHE_TTL = "86400"
+
+# Declare the secret names this Worker expects. `wrangler deploy`
+# will fail with a clear error if any are missing.
+[secrets]
+required = ["B2_ACCOUNTS"]

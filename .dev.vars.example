@@ -1,0 +1,7 @@
+# Copy this file to .dev.vars (gitignored) for local development.
+# B2_ACCOUNTS is a JSON string — one object per B2 account, keyed
+# by the name you want in the URL path: /<name>/<bucket>/<key>
+B2_ACCOUNTS='{"account01":{"endpoint":"s3.us-west-004.backblazeb2.com","region":"us-west-004","keyId":"KEY_ID_1","applicationKey":"APP_KEY_1","label":"Account 01"},"account02":{"endpoint":"s3.us-west-004.backblazeb2.com","region":"us-west-004","keyId":"KEY_ID_2","applicationKey":"APP_KEY_2","label":"Account 02"},"account03":{"endpoint":"s3.us-west-004.backblazeb2.com","region":"us-west-004","keyId":"KEY_ID_3","applicationKey":"APP_KEY_3","label":"Account 03"},"account04":{"endpoint":"s3.us-west-004.backblazeb2.com","region":"us-west-004","keyId":"KEY_ID_4","applicationKey":"APP_KEY_4","label":"Account 04"},"account05":{"endpoint":"s3.us-west-004.backblazeb2.com","region":"us-west-004","keyId":"KEY_ID_5","applicationKey":"APP_KEY_5","label":"Account 05"}}'
+
+# Optional cache TTL override (seconds). Defaults to 86400 (24h).
+# CACHE_TTL="86400"
